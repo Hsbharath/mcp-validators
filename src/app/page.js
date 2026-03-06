@@ -21,6 +21,7 @@ export default function Home() {
 
   return (
     <div className="flex h-screen bg-gray-950 text-white overflow-hidden">
+      
       <Sidebar selectedServer={selectedServer} onSelectServer={handleSelectServer} />
 
       <main className="flex-1 flex flex-col overflow-hidden">
