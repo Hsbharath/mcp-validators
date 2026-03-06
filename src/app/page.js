@@ -52,11 +52,13 @@ export default function Home() {
 
         {/* Content */}
         <div className="flex-1 overflow-y-auto p-6">
-          {view === "dashboard" ? (
-            <Dashboard onSelectServer={handleSelectServer} />
-          ) : selectedServer ? (
-            <ValidatorPanel key={selectedServer.id} server={selectedServer} />
-          ) : null}
+          <div className="max-w-screen-lg mx-auto">
+            {view === "dashboard" ? (
+              <Dashboard onSelectServer={handleSelectServer} />
+            ) : selectedServer ? (
+              <ValidatorPanel key={selectedServer.id} server={selectedServer} />
+            ) : null}
+          </div>
         </div>
       </main>
     </div>
