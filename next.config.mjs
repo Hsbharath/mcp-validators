@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const repoName = "mcp-servers"; // change this to match your GitHub repo name
+const repoName = "mcp-validators"; // change this to match your GitHub repo name
 const isGithubActions = process.env.GITHUB_ACTIONS === "true";
 
 const nextConfig = {
